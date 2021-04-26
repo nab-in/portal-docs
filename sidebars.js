@@ -15,7 +15,7 @@ module.exports = {
     {
       type: "category",
       label: "Features",
-      items: ["users/users", "jobs/jobs", "companies/companies"],
+      items: ["users/auth", "users/users", "jobs/jobs", "companies/companies"],
     },
   ],
 };
