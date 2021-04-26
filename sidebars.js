@@ -10,5 +10,12 @@
  */
 
 module.exports = {
-  portalSideBar: ["intro"],
+  portalSideBar: [
+    "intro",
+    {
+      type: "category",
+      label: "Features",
+      items: ["users/users", "jobs/jobs", "companies/companies"],
+    },
+  ],
 };
