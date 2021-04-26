@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{77:function(o){o.exports=JSON.parse('{"pluginId":"default","version":"current","label":"Next","isLast":true,"docsSidebars":{"portalSideBar":[{"type":"link","label":"Introduction","href":"/portal-docs/docs/intro"}]},"permalinkToSidebar":{"/portal-docs/docs/intro":"portalSideBar"}}')}}]);
