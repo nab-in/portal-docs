@@ -37,7 +37,7 @@ _Method: POST_
 `Endpoint`
 
 ```JS
-/api/users
+/api/users/register
 ```
 
 `Request Payload`
@@ -80,7 +80,7 @@ _Method: POST_
 `Endpoint`
 
 ```JS
-/api/users
+/api/users/register
 ```
 
 `Request Payload`
