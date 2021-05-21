@@ -42,7 +42,7 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
-          editUrl: "https://github.com/nab-in/portal-docs/edit/main/",
+          editUrl: "https://github.com/nab-in/portal-docs/edit/develop/",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
