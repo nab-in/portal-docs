@@ -117,8 +117,19 @@ _Method: GET_
 
 `Endpoint`
 
-````JS
+```JS
 /api/companies?page=3&pageSize=100
+```
+
+- You can also pass params to get all data without pagination by passing in `paging=false`
+
+_Method: GET_
+
+`Endpoint`
+
+```JS
+/api/companies?paging=false
+```
 
 ## Get One company(By ID)
 
@@ -126,7 +137,7 @@ _Method: GET_
 
 ```JS
 /api/companies/FbKroGm4tZuga
-````
+```
 
 `Response`
 

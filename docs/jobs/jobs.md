@@ -121,6 +121,16 @@ _Method: GET_
 /api/jobs?page=3&pageSize=100
 ```
 
+- You can also pass params to get all data without pagination by passing in `paging=false`
+
+_Method: GET_
+
+`Endpoint`
+
+```JS
+/api/jobs?paging=false
+```
+
 ## Get One job(By ID)
 
 `Endpoint`

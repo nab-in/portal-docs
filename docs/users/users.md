@@ -166,8 +166,19 @@ _Method: GET_
 
 `Endpoint`
 
-````JS
+```JS
 /api/users?page=3&pageSize=100
+```
+
+- You can also pass params to get all data without pagination by passing in `paging=false`
+
+_Method: GET_
+
+`Endpoint`
+
+```JS
+/api/jobs?paging=false
+```
 
 ## Get One User(By ID)
 
@@ -175,7 +186,7 @@ _Method: GET_
 
 ```JS
 /api/users/FbKroGm4tZuga
-````
+```
 
 `Response`
 
