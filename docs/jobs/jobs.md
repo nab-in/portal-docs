@@ -107,6 +107,11 @@ _Method: GET_
 }
 ```
 
+## Paging and Pagination
+
+- You can define pages you want and the data per page size you want by passing query params in get request i.e page=2&pageSize=400
+- This will return data of page two with size of 400 records per page
+
 ## Get One job(By ID)
 
 `Endpoint`
