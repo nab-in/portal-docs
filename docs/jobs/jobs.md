@@ -36,7 +36,7 @@ _Method: POST_
 `Endpoint`
 
 ```JS
-/api/jobs/register
+/api/jobs
 ```
 
 `Request Payload`
