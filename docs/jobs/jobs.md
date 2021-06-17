@@ -286,3 +286,23 @@ _Method: DELETE_
   "message": "Object with identifier D67ZA1LulF2kf deleted successfully"
 }
 ```
+
+## Apply to a job
+
+_Method: POST_
+
+`Endpoint`
+
+```JS
+/api/jobs/D67ZA1LulF2kf/apply
+```
+
+- Where _D67ZA1LulF2kf_ is the job ID
+
+`Response`
+
+```JSON
+{
+  "message": "You have successfully applied to this job"
+}
+```
