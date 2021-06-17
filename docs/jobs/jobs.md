@@ -306,3 +306,23 @@ _Method: POST_
   "message": "You have successfully applied to this job"
 }
 ```
+
+## Un-Apply a job
+
+_Method: DELETE_
+
+`Endpoint`
+
+```JS
+/api/jobs/D67ZA1LulF2kf/revoke
+```
+
+- Where _D67ZA1LulF2kf_ is the job ID
+
+`Response`
+
+```JSON
+{
+  "message": "You have revoked successfully your application from this job"
+}
+```
