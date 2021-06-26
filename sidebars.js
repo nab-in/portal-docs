@@ -15,7 +15,16 @@ module.exports = {
     {
       type: "category",
       label: "Features",
-      items: ["users/auth", "users/users", "jobs/jobs", "companies/companies"],
+      items: [
+        "users/auth",
+        "users/users",
+        {
+          type: "category",
+          label: "Jobs",
+          items: ["jobs/jobs", "jobs/jobcategories"],
+        },
+        "companies/companies",
+      ],
     },
   ],
 };
