@@ -21,7 +21,7 @@ module.exports = {
         {
           type: "category",
           label: "Jobs",
-          items: ["jobs/jobs", "jobs/jobcategories"],
+          items: ["jobs/jobs", "jobs/jobcategories", "jobs/reviews"],
         },
         "companies/companies",
       ],
