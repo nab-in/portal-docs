@@ -117,6 +117,48 @@ _Method: POST_
 }
 ```
 
+### Creating a user with user roles
+
+`Endpoint`
+
+```JS
+/api/users/register
+```
+
+`Request Payload`
+
+```JSON
+{
+    "firstname":"Portal",
+    "password": "yourstrongpassword",
+    "lastname":"Admin",
+    "username":"admin",
+    "email": "admin@portal.social",
+    "userRoles": [{"id":"LrlisrzoAppk3"}, {"id":"PQis920aApik3"}]
+}
+```
+
+`Response`
+
+- These responses can vary depending on success and failure however, to here we will show the success reponse.
+
+```JSON
+{
+  "message": "Item successfully created",
+  "payload": {
+    "id": "iHWO6i7JFTI8Y",
+    "created": "2021-04-26T09:06:47.990Z",
+    "lastupdated": "2021-04-26T09:06:47.990Z",
+    "firstname": "Portal",
+    "email": "admin@portal.social",
+    "lastname": "Admin",
+    "username": "admin",
+    "verified": false,
+    "enabled": true
+  }
+}
+```
+
 <p> <strong>NOTE</strong>: By default, a user will be enabled and not verified when they first signup. After verifying their email address, a user will be verified.</p>
 
 ## Get Users
