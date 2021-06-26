@@ -24,14 +24,7 @@ A single job object, has the following keys
 
 ## Creating a job
 
-- Crud operations involving creating a single job, can be done in two ways,
-
-  - A standalone job, these will mainly be job seekers
-  - A job who belongs to a job
-
 _Method: POST_
-
-### Creating a standalone job
 
 `Endpoint`
 
