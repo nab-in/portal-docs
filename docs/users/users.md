@@ -383,3 +383,31 @@ _Method: DELETE_
   "message": "Object with identifier D67ZA1LulF2kf deleted successfully"
 }
 ```
+
+
+## Check a user's company
+
+_Method: POST_
+
+`Endpoint`
+
+```JS
+/api/users/belongstocompany
+```
+
+`Request`
+
+```JSON
+{
+    "company":"somerandomcompanyid"
+}
+```
+
+`Response`
+
+```JSON
+{
+    "BelongstoCompany": true
+}
+```
+
