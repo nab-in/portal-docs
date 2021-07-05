@@ -386,46 +386,22 @@ _Method: DELETE_
 
 ## Check a user's company
 
-_Method: POST_
+_Method: GET_
 
 `Endpoint`
 
 ```JS
-/api/users/belongstocompany
+/api/users/belongstocompany?company=OBiivREPMQ3dm
 ```
 
-`Request`
+- Where `OBiivREPMQ3dm` is the company ID
+
+`Response on Success`
 
 ```JSON
 {
-    "company":"somerandomcompanyid"
+  "message": true
 }
 ```
 
-`Response`
-
-```JSON
-{
-  "message": "User belongs to company",
-  "payload": {
-    "id": "JCwQtfT3jqaR7",
-    "created": "2021-07-02T12:45:54.605Z",
-    "lastupdated": "2021-07-02T12:45:54.605Z",
-    "firstname": "admin",
-    "email": "admin@portal.social",
-    "lastname": "admin",
-    "username": "admin",
-    "verified": false,
-    "enabled": true,
-    "company": {
-      "id": "mFtfjnSzlXWxw",
-      "name": "Portal Company",
-      "created": "2021-07-03T15:00:04.340Z",
-      "lastupdated": "2021-07-03T15:00:04.340Z",
-      "location": "Dar es Salaam",
-      "website": "nabin.social",
-      "title": "A software development for next generation solutions"
-    }
-  }
-}
-```
+- Response on failure depends on the different criterias with a reponse object of key error with an appropriate message.
