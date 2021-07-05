@@ -319,3 +319,43 @@ _Method: DELETE_
   "message": "You have revoked successfully your application from this job"
 }
 ```
+
+## Save to a job
+
+_Method: POST_
+
+`Endpoint`
+
+```JS
+/api/jobs/D67ZA1LulF2kf/save
+```
+
+- Where _D67ZA1LulF2kf_ is the job ID
+
+`Response`
+
+```JSON
+{
+  "message": "Job saved successfully"
+}
+```
+
+## Un-save a job
+
+_Method: DELETE_
+
+`Endpoint`
+
+```JS
+/api/jobs/D67ZA1LulF2kf/remove
+```
+
+- Where _D67ZA1LulF2kf_ is the job ID
+
+`Response`
+
+```JSON
+{
+  "message": "Job removed successfully"
+}
+```
