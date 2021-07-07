@@ -405,3 +405,105 @@ _Method: GET_
 ```
 
 - Response on failure depends on the different criterias with a reponse object of key error with an appropriate message.
+
+## Get Applied Jobs
+
+_METHOD: GET_
+
+- Requires authentication: `YES`
+
+`Endpoint`
+
+```JS
+/api/users/appliedJobs
+```
+
+`Response on Success`
+
+```JSON
+{
+  "pager": {
+    "page": 1,
+    "pageSize": 100,
+    "pageCount": 1,
+    "total": 1
+  },
+  "jobs": [
+    {
+      "id": "AOvMkuzYCKfU4",
+      "name": "description",
+      "created": "2021-07-05T20:10:34.267Z",
+      "lastupdated": "2021-07-05T20:10:34.267Z",
+      "description": "description"
+    }
+  ]
+}
+```
+
+## Get Created Jobs
+
+_METHOD: GET_
+
+- Requires authentication: `YES`
+
+`Endpoint`
+
+```JS
+/api/users/createdJobs
+```
+
+`Response on Success`
+
+```JSON
+{
+  "pager": {
+    "page": 1,
+    "pageSize": 100,
+    "pageCount": 1,
+    "total": 1
+  },
+  "jobs": [
+    {
+      "id": "AOvMkuzYCKfU4",
+      "name": "description",
+      "created": "2021-07-05T20:10:34.267Z",
+      "lastupdated": "2021-07-05T20:10:34.267Z",
+      "description": "description"
+    }
+  ]
+}
+```
+
+## Get Saved Jobs
+
+_METHOD: GET_
+
+- Requires authentication: `YES`
+
+`Endpoint`
+
+```JS
+/api/users/savedJobs
+```
+
+`Response on Success`
+
+```JSON
+{
+  "pager": {
+    "page": 1,
+    "pageSize": 100,
+    "pageCount": 1,
+    "total": 1
+  },
+  "jobs": [
+    {
+      "id": "AOvMkuzYCKfU4",
+      "name": "description",
+      "created": "2021-07-05T20:10:34.267Z",
+      "lastupdated": "2021-07-05T20:10:34.267Z",
+      "description": "description"
+    }
+  ]
+}
+```
