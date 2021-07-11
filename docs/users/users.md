@@ -507,3 +507,32 @@ _METHOD: GET_
   ]
 }
 ```
+
+## Update user Password
+
+_METHOD: PUR_
+
+- Requires authentication: `YES`
+
+`Endpoint`
+
+```JS
+/api/users/passwordupdate
+```
+
+`Request Payload`
+
+```JSON
+  {
+    "oldPassword":"oldPassword",
+    "newPassword":"newPassword"
+  }
+```
+
+`Response on Success`
+
+```JSON
+{
+  "message": "Your Password has been changed successfully"
+}
+```
