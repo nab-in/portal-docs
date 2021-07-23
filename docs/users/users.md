@@ -510,7 +510,7 @@ _METHOD: GET_
 
 ## Update user Password
 
-_METHOD: PUR_
+_METHOD: PUT_
 
 - Requires authentication: `YES`
 
@@ -534,5 +534,57 @@ _METHOD: PUR_
 ```JSON
 {
   "message": "Your Password has been changed successfully"
+}
+```
+
+## Upload/Update DP
+
+_METHOD: POST_
+
+- Requires authentication: `YES`
+
+`Endpoint`
+
+```JS
+/api/users/dp
+```
+
+`Request Payload`
+
+- Only files
+
+`Response on Success`
+
+```JSON
+{
+
+  "path": "http://localhost:5000/api/users/K91ziWRDIsGPe.png/dp",
+  "message": "Profile picture saved successfully"
+}
+```
+
+## Upload/Update CV
+
+_METHOD: POST_
+
+- Requires authentication: `YES`
+
+`Endpoint`
+
+```JS
+/api/users/cv
+```
+
+`Request Payload`
+
+- Only files
+
+`Response on Success`
+
+```JSON
+{
+
+  "path": "http://localhost:5000/api/users/K91ziWRDIsGPe.png/cv",
+  "message": "CV saved successfully"
 }
 ```
