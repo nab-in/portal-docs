@@ -32,7 +32,7 @@ A single user object, has the following keys
 
 _Method: POST_
 
-### Creating a standalone user
+### Registering a User
 
 `Endpoint`
 
@@ -117,7 +117,7 @@ _Method: POST_
 }
 ```
 
-### Creating a user with user roles
+### Adding user roles to user
 
 `Endpoint`
 
@@ -133,8 +133,7 @@ _Method: POST_
     "password": "yourstrongpassword",
     "lastname":"Admin",
     "username":"admin",
-    "email": "admin@portal.social",
-    "userRoles": [{"id":"LrlisrzoAppk3"}, {"id":"PQis920aApik3"}]
+    "email": "admin@portal.social"
 }
 ```
 
@@ -159,172 +158,6 @@ _Method: POST_
 }
 ```
 
-<p> <strong>NOTE</strong>: By default, a user will be enabled and not verified when they first signup. After verifying their email address, a user will be verified.</p>
-
-## Get Users
-
-_Method: GET_
-
-`Endpoint`
-
-```JS
-/api/users
-```
-
-`Response`
-
-```JSON
-{
-  "pager": {
-    "page": 1,
-    "pageSize": 100,
-    "pageCount": 1,
-    "total": 1,
-    "nextPage": "/api/users?page=2"
-  },
-  "users": [
-    {
-      "id": "FbKroGm4tZuga",
-      "created": "2021-04-26T09:36:10.740Z",
-      "lastupdated": "2021-04-26T09:36:10.740Z",
-      "firstname": "Admin",
-      "email": "portal@admin.portal",
-      "lastname": "Portal",
-      "username": "admin",
-      "verified": true,
-      "enabled": true
-    }
-  ]
-}
-```
-
-## Pagination and Page sizes
-
-- You can define pages you want and the data per page size you want by passing query params in get request i.e page=2&pageSize=400
-- This will return data of page two with size of 400 records per page
-- If page and page size are not defined, the default is 1 and 100 respectively
-
-_Method: GET_
-
-`Endpoint`
-
-```JS
-/api/users?page=3&pageSize=100
-```
-
-- You can also pass params to get all data without pagination by passing in `paging=false`
-
-_Method: GET_
-
-`Endpoint`
-
-```JS
-/api/jobs?paging=false
-```
-
-## Get One User(By ID)
-
-`Endpoint`
-
-```JS
-/api/users/FbKroGm4tZuga
-```
-
-`Response`
-
-```JSON
-{
-  "id": "FbKroGm4tZuga",
-  "created": "2021-04-26T09:36:10.740Z",
-  "lastupdated": "2021-04-26T09:36:10.740Z",
-  "firstname": "Admin",
-  "email": "portal@admin.portal",
-  "lastname": "Portal",
-  "username": "admin",
-  "verified": true,
-  "enabled": true
-}
-```
-
-## Get Users(By Specifying fields)
-
-<p> <strong>NOTE</strong>: On getting users, whether a single user or the whole list, we can also specify the fields and relations we want</p>
-
-`Endpoint`
-
-```JS
-/api/users?fields=id,firstname,username
-```
-
-`Response`
-
-```JSON
-{
-  "pager": {
-    "page": 1,
-    "pageSize": 100,
-    "pageCount": 1,
-    "total": 1,
-    "nextPage": "/api/users?page=2"
-  },
-  "users": [
-    {
-      "id": "FbKroGm4tZuga",
-      "firstname": "Admin",
-      "username": "admin"
-    }
-  ]
-}
-```
-
-## Get Users(By filtering fields)
-
-- We can filter users depending on certain fields, more like a search strategy, in the example below, we will find all user with username equal to `admin`
-
-`Endpoint`
-
-```JS
-/api/users?filter=username:eq:admin
-```
-
-`Response`
-
-```JSON
-{
-  "pager": {
-    "page": 1,
-    "pageSize": 100,
-    "pageCount": 1,
-    "total": 1,
-    "nextPage": "/api/users?page=2"
-  },
-  "users": [
-    {
-      "id": "FbKroGm4tZuga",
-      "created": "2021-04-26T09:36:10.740Z",
-      "lastupdated": "2021-04-26T09:36:10.740Z",
-      "firstname": "Admin",
-      "email": "portal@admin.portal",
-      "lastname": "Portal",
-      "username": "admin",
-      "verified": true,
-      "enabled": true
-    }
-  ]
-}
-```
-
-<p> <strong>NOTE</strong>: All filtering mechanisms, can be combined to produce a lobust search strategy</p>
-
-- Available search and filter Operators
-
-| Operator | Types                                                                                 | Value Required | Description                             |
-| -------- | ------------------------------------------------------------------------------------- | -------------- | --------------------------------------- |
-| eq       | string \| boolean \| integer \| float \| enum \| collection (checks for size) \| date | true           | Equality                                |
-| like     | string                                                                                | true           | Case sensitive string, match anywhere   |
-| ilike    | string                                                                                | true           | Case insensitive string, match anywhere |
-| in       | string \| boolean \| integer \| float \| date                                         | true           | Find objects matching 1 or more values  |
-
 ## Update a user
 
 _Method: PUT_
@@ -332,7 +165,7 @@ _Method: PUT_
 `Endpoint`
 
 ```JS
-/api/users/FbKroGm4tZuga
+/api/users
 ```
 
 `Request Payload`
@@ -343,7 +176,8 @@ _Method: PUT_
   "email": "super@admin.portal",
   "lastname": "Super Admin",
   "username": "admin",
-  "enabled": false
+  "enabled": false,
+  "token":"logged in user's token"
 }
 ```
 
