@@ -21,6 +21,8 @@ A single job object, has the following keys
 | email       | job's contact/company email                           | YES           | String      |
 | created     | job's date of creation                                | NO            | Date        |
 | lastupdated | job's date for when it was last updated               | NO            | Date        |
+| openTo      | A Group of individuals' category suitable for the job | NO            | String      |
+| jobType     | Whether the is freelance/part time or full time       | NO            | String      |
 
 ## Creating a job
 
