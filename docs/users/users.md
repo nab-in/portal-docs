@@ -433,7 +433,19 @@ _Method: POST_
 /api/users/D67ZA1LulF2kf/interview
 ```
 
-- Where _D67ZA1LulF2kf_ is the user ID
+`Request Payload`
+
+```JSON
+
+{
+  "job": "u9AGnRS2673yT",
+  "date":"2021-10-28T13:00:00",
+  "location":"PPF Towers, Dar es Salaam"
+}
+
+```
+
+- Where _D67ZA1LulF2kf_ is the user ID and _u9AGnRS2673yT_ is Job ID
 
 `Response`
 
@@ -448,13 +460,79 @@ _Method: POST_
 `Endpoint`
 
 ```JS
-/api/users/D67ZA1LulF2kf/rejct
+/api/users/D67ZA1LulF2kf/reject
 ```
 
-- Where _D67ZA1LulF2kf_ is the user ID
+`Request Payload`
+
+```JSON
+
+{
+  "job": "u9AGnRS2673yT"
+}
+
+```
+
+- Where _D67ZA1LulF2kf_ is the user ID and _u9AGnRS2673yT_ is Job ID
 
 `Response`
 
 ```JSON
 <Bennett Benedict's> application has been rejected
+```
+
+## Accept Call for interview
+
+_Method: POST_
+
+`Endpoint`
+
+```JS
+/api/users/D67ZA1LulF2kf/accept
+```
+
+`Request Payload`
+
+```JSON
+
+{
+  "job": "u9AGnRS2673yT"
+}
+
+```
+
+- Where _D67ZA1LulF2kf_ is the user ID and _u9AGnRS2673yT_ is Job ID
+
+`Response`
+
+```JSON
+You have accepted the call for interview for job <description>
+```
+
+## Reject Call for interview
+
+_Method: POST_
+
+`Endpoint`
+
+```JS
+/api/users/D67ZA1LulF2kf/accept
+```
+
+`Request Payload`
+
+```JSON
+
+{
+  "job": "u9AGnRS2673yT"
+}
+
+```
+
+- Where _D67ZA1LulF2kf_ is the user ID and _u9AGnRS2673yT_ is Job ID
+
+`Response`
+
+```JSON
+You have accepted the call for interview for job <description>
 ```
