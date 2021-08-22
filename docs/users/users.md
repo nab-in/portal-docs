@@ -422,3 +422,39 @@ _METHOD: POST_
   "message": "CV saved successfully"
 }
 ```
+
+## Call Applicant for interview
+
+_Method: POST_
+
+`Endpoint`
+
+```JS
+/api/users/D67ZA1LulF2kf/interview
+```
+
+- Where _D67ZA1LulF2kf_ is the user ID
+
+`Response`
+
+```JSON
+<Bennett Benedict> has been invited for the interview
+```
+
+## Reject Applicant's job application
+
+_Method: POST_
+
+`Endpoint`
+
+```JS
+/api/users/D67ZA1LulF2kf/rejct
+```
+
+- Where _D67ZA1LulF2kf_ is the user ID
+
+`Response`
+
+```JSON
+<Bennett Benedict's> application has been rejected
+```
