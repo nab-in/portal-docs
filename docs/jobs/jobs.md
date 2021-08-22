@@ -361,3 +361,47 @@ _Method: DELETE_
   "message": "Job removed successfully"
 }
 ```
+
+## Get Job Applicants
+
+_Method: GET_
+
+`Endpoint`
+
+```JS
+/api/jobs/D67ZA1LulF2kf/applicants
+```
+
+- Where _D67ZA1LulF2kf_ is the job ID
+
+`Response`
+
+```JSON
+{
+  "pager": {
+    "page": 1,
+    "pageSize": 100,
+    "pageCount": 1,
+    "total": 1
+  },
+  "users": [
+    {
+      "id": "zg59WqRwrOjw6",
+      "created": "2021-08-22T18:57:02.028Z",
+      "lastupdated": "2021-08-22T18:57:02.028Z",
+      "firstname": "Bennett",
+      "email": "benny@gmail.com ",
+      "lastname": "Benedict",
+      "username": "BaharaJr",
+      "dp": "http://localhost:5000/api/users/dp.png/dp",
+      "verified": false,
+      "enabled": true,
+      "interview": true/false,
+      "accepted": true/false,
+      "date": "interview date if accepted",
+      "location":"interview location"
+    }
+  ]
+}
+
+```
