@@ -286,3 +286,30 @@ _Method: DELETE_
   "message": "Object with identifier D67ZA1LulF2kf deleted successfully"
 }
 ```
+
+## Upload/Update Company Logo
+
+_METHOD: POST_
+
+- Requires authentication: `YES`
+
+`Endpoint`
+
+```JS
+/api/companies/h0P9zvV0DD9Yh/logo
+```
+
+- Where `h0P9zvV0DD9Yh` is the company ID
+
+`Request Payload`
+
+- Only files
+
+`Response on Success`
+
+```JSON
+{
+  "path": "/api/Companies/Odx9MpJeFdtxz.png/cv",
+  "message": "Company Logo saved successfully"
+}
+```
