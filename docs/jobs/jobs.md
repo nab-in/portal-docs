@@ -404,3 +404,9 @@ _Method: GET_
   ]
 }
 ```
+
+- You can select applicants called for an interview in a certain range as below
+
+```JS
+/api/jobs/D67ZA1LulF2kf/applicants?startDate=2021-10-23&endDate=2021-1014
+```
