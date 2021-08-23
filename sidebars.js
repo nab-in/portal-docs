@@ -27,6 +27,7 @@ module.exports = {
           items: ["jobs/jobs", "jobs/jobcategories", "jobs/reviews"],
         },
         "companies/companies",
+        "users/metrics",
       ],
     },
   ],

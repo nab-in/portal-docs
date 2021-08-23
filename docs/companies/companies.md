@@ -313,30 +313,3 @@ _METHOD: POST_
   "message": "Company Logo saved successfully"
 }
 ```
-
-## Get Metrics for companies
-
-_Method: GET_
-
-- Requires authentication: `YES`
-
-`Endpoint`
-
-```JS
-/api/companies/h0P9zvV0DD9Yh/metrics
-```
-
-- Where `h0P9zvV0DD9Yh` is the company ID
-
-`Response on Success`
-
-```JSON
-{
-  "message": "Metrics for Blah",
-  "metrics": {
-    "applicants": 1,
-    "jobs": 1,
-    "interviews": 1
-  }
-}
-```
