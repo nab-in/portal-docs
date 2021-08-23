@@ -55,3 +55,29 @@ _Method: GET_
   }
 }
 ```
+
+## Get metrics with date ranges
+
+_Method: GET_
+
+- Requires authentication: `YES`
+
+`Endpoint`
+
+```JS
+/api/metrics?startDate=2020-10-28&endDate=2020-11-28
+```
+
+`Response on Success`
+
+```JSON
+{
+  "message": "Job Portal Admin Metrics from 2020-10-28 to 2020-11-28",
+  "metrics": {
+    "users": 2,
+    "companies": 1,
+    "applications": 1,
+    "jobs": 1
+  }
+}
+```
