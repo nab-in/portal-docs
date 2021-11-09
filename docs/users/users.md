@@ -536,3 +536,19 @@ _Method: POST_
 ```JSON
 You have accepted the call for interview for job <description>
 ```
+
+## Verify User account
+
+_Method: POST_
+
+`Endpoint`
+
+```JS
+/api/users/verify
+```
+
+`Response`
+
+```JSON
+A verification link has been sent to your email account..
+```
