@@ -33,7 +33,7 @@ module.exports = {
     },
     footer: {
       style: "dark",
-      copyright: `Copyright © ${new Date().getFullYear()} (We Code Together) with ❣️.`,
+      copyright: `Copyright © ${Number(new Date().getFullYear())} (We Code Together) with ❣️.`,
     },
   },
   presets: [
